@@ -1179,4 +1179,8 @@ public class CommCareApplication extends MultiDexApplication {
     public AsyncRestoreHelper getAsyncRestoreHelper(DataPullTask task) {
         return new AsyncRestoreHelper(task);
     }
+
+    public boolean isRunningTest() {
+        return false;
+    }
 }
